@@ -13,7 +13,7 @@
         },
         "siteName": {
             "type": "string",
-            "defaultValue": "SonarQubeAppService"
+            "defaultValue": "SonarQubeApp"
         },
         "skuName": {
             "defaultValue": "B1",
