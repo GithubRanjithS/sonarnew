@@ -63,7 +63,6 @@ TrackTimedEvent -InstrumentationKey $ApplicationInsightsApiKey -EventName 'Downl
     [Net.ServicePointManager]::SecurityProtocol = [Net.SecurityProtocolType]::Tls12
     Write-Output 'Prevent the progress meter from trying to access the console'
     $global:progressPreference = 'SilentlyContinue'
-    
     if(!$Version -or ($Version -ieq 'Latest')) {
         # binaries.sonarsource.com moved to S3 and is not easily searchable anymore. Getting the latest version from GitHub releases.
         $releasesFromApi = (Invoke-WebRequest -Uri 'https://api.github.com/repos/SonarSource/sonarqube/releases' -UseBasicParsing).Content
