@@ -13,7 +13,7 @@
         },
         "siteName": {
             "type": "string",
-            "defaultValue": "rkSonarQubeAppnew"
+            "defaultValue": "sonarqubertest"
         },
         "skuName": {
             "defaultValue": "B1",
